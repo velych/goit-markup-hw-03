@@ -59,8 +59,7 @@ ul {
 
 /* ---------------HEADER------------- */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -75,12 +74,16 @@ ul {
 }
 .header-list {
   display: flex;
+  margin-left: auto;
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-connect {
-  margin-left: auto;
+
+.header-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .logo {
@@ -136,13 +139,9 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.hero-container {
-  margin-bottom: 30px;
-}
 
 .hero-subtitle {
-  padding-bottom: 10px;
-  margin-top: 94px;
+  margin-bottom: 10px;
 }
 
 .hero-title {
@@ -167,6 +166,11 @@ ul {
   margin-bottom: 30px;
 }
 
+.hero-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .hero-btn {
   font-style: normal;
   font-weight: 700;
@@ -180,9 +184,7 @@ ul {
   min-width: 200px;
   min-height: 50px;
 
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  display: block;
 
   margin-right: auto;
   margin-left: auto;
@@ -204,21 +206,20 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-link);
-  margin-right: 30px;
 }
 .hero-lead {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-right: 30px;
 }
 
 .hero-list {
   display: flex;
 }
 .hero-item {
-  width: 100%;
+  width: 270px;
+  margin-right: 30px;
 }
 /* ---------Чем мы занимаемся---------- */
 .about {
@@ -233,18 +234,18 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-link);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .about-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .about-item:not(:last-child) {
-  margin-right: 30px;
   width: calc(100% / 3 - 30px);
+  margin-right: 30px;
 }
-
 /* -------------------Наша команда----------------- */
 .team {
   background-color: var(--background-color);
@@ -268,8 +269,12 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .team-img {
   margin-bottom: 30px;
 }
@@ -293,11 +298,10 @@ ul {
 /* ------------Контактная информация------------ */
 .footer {
   background-color: var(--hero-color-footer);
-  padding-bottom: 60px;
-  padding-top: 60px;
 }
 
 .web-logo {
+  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -333,20 +337,24 @@ ul {
 .footer-link:hover {
   color: var(--header-logo);
 }
+.last-item {
+  padding-bottom: 60px;
+}
 
 /* --------------PORTFOLIO--------------- */
 
 /* BUTTON */
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+
 .header-container-portfolio {
   display: flex;
   align-items: center;
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-list {
+  margin-left: auto;
 }
 
 /* Кнопки */
@@ -443,10 +451,10 @@ ul {
   margin-right: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
   margin-bottom: 10px;
   width: calc(100% / 3 - 30px);
 }
+
 .poster {
   margin-bottom: 20px;
 }
@@ -458,6 +466,7 @@ ul {
 .hero-portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
 }
 .portfolio-subtitle {
   font-style: normal;
@@ -479,8 +488,6 @@ ul {
 /* Контактная информация */
 .footer-portfolio {
   background-color: var(--hero-color-footer);
-  padding-bottom: 60px;
-  padding-top: 60px;
 }
 
 .footer-portfolio-link {
