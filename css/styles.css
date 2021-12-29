@@ -451,8 +451,8 @@ ul {
   margin-right: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  margin-bottom: 10px;
   width: calc(100% / 3 - 30px);
+  margin-bottom: 30px;
 }
 
 .poster {
