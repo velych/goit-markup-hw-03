@@ -69,21 +69,13 @@ ul {
   display: flex;
   align-items: center;
 }
-.logo {
-  margin-right: 94px;
-}
+
 .header-list {
   display: flex;
   margin-left: auto;
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
-}
-
-.header-div {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
 }
 
 .logo {
@@ -94,6 +86,7 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--header-logo);
+  margin-right: 94px;
 }
 .logo-span-header {
   color: var(--hero-color-footer);
@@ -109,6 +102,9 @@ ul {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--header-link);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .header-contact {
@@ -159,10 +155,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
+  max-width: 696px;
 
   margin-right: auto;
   margin-left: auto;
@@ -215,7 +208,6 @@ ul {
 
 .hero-list {
   display: flex;
-  margin-right: -30px;
 }
 .hero-item:not(:last-child) {
   margin-right: 30px;
@@ -242,11 +234,10 @@ ul {
 .about-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
 }
 
 .about-item:not(:last-child) {
-  width: calc(100% / 3 - 30px);
+  width: 370px;
   margin-right: 30px;
 }
 /* -------------------Наша команда----------------- */
@@ -304,9 +295,16 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-.web-logo {
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--header-logo);
   margin-bottom: 20px;
+  display: block;
 }
 
 .footer-logo {
@@ -344,14 +342,11 @@ ul {
 
 /* --------------PORTFOLIO--------------- */
 
-/* BUTTON */
+/* header-portfolio */
 
 .header-container-portfolio {
   display: flex;
   align-items: center;
-}
-.header-item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .header-list {
@@ -450,7 +445,6 @@ ul {
 .li-portfolio-item {
   margin-right: 30px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   width: calc(100% / 3 - 30px);
   margin-bottom: 30px;
 }
@@ -474,7 +468,10 @@ ul {
   color: var(--header-link);
 }
 .container-port-div {
-  padding: 20px;
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .hero-portfolio-lead {
